@@ -7,6 +7,7 @@
 
 <button onclick="sumar()">Sumar</button>
 <button onclick="restar()">Restar</button>
+<button onclick="reiniciar()">Reiniciar</button>
 
 <script>
 let num = 0;
@@ -18,6 +19,11 @@ function sumar() {
 
 function restar() {
   num--;
+  document.getElementById("numero").innerText = num;
+}
+
+function reiniciar() {
+  num = 0;
   document.getElementById("numero").innerText = num;
 }
 </script>
